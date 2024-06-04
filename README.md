@@ -1,4 +1,4 @@
-# 🍕 Pizzaria da Gatinha - Landpage
+# 🍕 Pizzaria da Gatinha Catarina- Landpage
 
 Bem-vindo ao repositório da **Pizzaria da Gatinha**! Este projeto é uma página de aterrissagem (Landpage) fofa e funcional para uma pizzaria fictícia, criada com HTML, CSS e JavaScript. Nossa landpage é projetada para encantar os visitantes e despertar o apetite com seu design atraente e informações claras sobre nossa pizzaria.
 
