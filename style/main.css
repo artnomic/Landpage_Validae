@@ -25,10 +25,10 @@ body {
     font-family: Pacifico, cursive;
 }
 
-.section-title span {
-    color: #E15F41;
-}
-
 #sobre-o-restaurante {
     background-color: #FFEAE6;
+}
+
+.text-colored {
+    color: #E15F41;
 }
