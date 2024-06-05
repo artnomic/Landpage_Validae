@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./style/main.css">
 </head>
+
 <body>
     <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
         <div class="container">
@@ -34,13 +36,13 @@
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link">
+                        <a href="#cardapio" class="nav-link">
                             <i class="bi bi-card-text me-1"></i>
                             Nosso Cardápio
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link">
+                        <a href="#contato" class="nav-link">
                             <i class="bi bi-chat-left-text me-1"></i>
                             Fale conosco
                         </a>
@@ -139,25 +141,286 @@
                 </div>
             </div>
             </secttion>
-            <section class="cardapio">
+            <section id="cardapio" class="pt-5 pb-5">
                 <div class="container">
                     <div class="row">
-                        <h2 class="section-title text-center">
+                        <h2 class="section-title text-center mb-5">
                             Nosso <span class="text-colored">cardápio</span>
                         </h2>
                     </div>
                     <div class="row">
                         <aside class="col-md-2">
                             <nav class="nav nav-pills flex-column nav-cardapio">
-                                <button type="button" class="nav-link text-colored fw-bold text-start active">Bebidas não alcoólicas</button>
-                                <button type="button" class="nav-link text-colored fw-bold text-start">Bebidas alcoólicas</button>
-                                <button type="button" class="nav-link text-colored fw-bold text-start">Entradas</button>
-                                <button type="button" class="nav-link text-colored fw-bold text-start">Pratos principais</button>
-                                <button type="button" class="nav-link text-colored fw-bold text-start">Sobremesas</button>
+                                <button data-bs-toggle="tab" data-bs-target="#bebidas-nao-alcoolicas" type="button" class="nav-link text-colored fw-bold text-start active">Bebidas não alcoólicas</button>
+                                <button data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas" type="button" class="nav-link text-colored fw-bold text-start">Bebidas alcoólicas</button>
+                                <button data-bs-toggle="tab" data-bs-target="#entradas" type="button" class="nav-link text-colored fw-bold text-start">Entradas</button>
+                                <button data-bs-toggle="tab" data-bs-target="#pratos-principais" type="button" class="nav-link text-colored fw-bold text-start">Pratos principais</button>
+                                <button data-bs-toggle="tab" data-bs-target="#sobremesas" type="button" class="nav-link text-colored fw-bold text-start">Sobremesas</button>
                             </nav>
                         </aside>
                         <div class="col-md-10">
-                            Conteúdo do cardápio
+                            <div class="tab-content">
+                                <div id="bebidas-nao-alcoolicas" class="tab-pane active">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/bebidas/coca-cola.jpg" alt="Coca-Cola"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Coca-Cola</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/bebidas/suco.jpg" alt="Suco de Laranja"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Suco de Laranja</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/bebidas/coca-cola.jpg" alt="Coca-Cola"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Coca-Cola</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/bebidas/suco.jpg" alt="Suco de Laranja"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Suco de Laranja</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/bebidas/coca-cola.jpg" alt="Coca-Cola"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Coca-Cola</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/bebidas/suco.jpg" alt="Suco de Laranja"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Suco de Laranja</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="bebidas-alcoolicas" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/bebidas/cerveja.jpg" alt="Cerveja"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Cerveja</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/bebidas/vinho.jpg" alt="Vinho"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Vinho</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/bebidas/cerveja.jpg" alt="Cerveja"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Cerveja</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/bebidas/vinho.jpg" alt="Vinho"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Vinho</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/bebidas/cerveja.jpg" alt="Cerveja"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Cerveja</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/bebidas/vinho.jpg" alt="Vinho"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Vinho</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="entradas" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/entradas/entrada.jpg" alt="Entrada"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Entrada</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/entradas/entrada.jpg" alt="Entrada"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Entrada</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/entradas/entrada.jpg" alt="Entrada"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Entrada</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/entradas/entrada.jpg" alt="Entrada"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Entrada</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/entradas/entrada.jpg" alt="Entrada"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Entrada</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/entradas/entrada.jpg" alt="Entrada"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Entrada</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="pratos-principais" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/pratos/salmao.jpg" alt="Prato Principal"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Prato Principal</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/pratos/salmao.jpg" alt="Prato Principal"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Prato Principal</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/pratos/salmao.jpg" alt="Prato Principal"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Prato Principal</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/pratos/salmao.jpg" alt="Prato Principal"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Prato Principal</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/pratos/salmao.jpg" alt="Prato Principal"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Prato Principal</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/pratos/salmao.jpg" alt="Prato Principal"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Prato Principal</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="sobremesas" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/sobremesas/bolo.jpg" alt="Sobremessa"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Sobremessa</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/sobremesas/bolo.jpg" alt="Sobremessa"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Sobremessa</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/sobremesas/bolo.jpg" alt="Sobremessa"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Sobremessa</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/sobremesas/bolo.jpg" alt="Sobremessa"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Sobremessa</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/sobremesas/bolo.jpg" alt="Sobremessa"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Sobremessa</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./images/cardapio/sobremesas/bolo.jpg" alt="Sobremessa"
+                                                class="d-block w-100">
+                                            <h5 class="mt-2">Sobremessa</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
